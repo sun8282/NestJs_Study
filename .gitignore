@@ -1,1 +1,10 @@
 /node_modules
+.prettierrc
+.idea
+nest-cli.json
+tsconfig.json
+eslint.config.mjs
+tsconfig.build.json
+package.json
+package-lock.json
+
