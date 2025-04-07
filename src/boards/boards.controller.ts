@@ -1,4 +1,6 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 
 @Controller('boards')
-export class BoardsController {}
+export class BoardsController {
+    
+}
