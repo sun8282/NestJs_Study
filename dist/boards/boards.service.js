@@ -8,10 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BoardsService = void 0;
 const common_1 = require("@nestjs/common");
+const boards_model_1 = require("./boards.model");
+const uuid_1 = require("uuid");
 let BoardsService = class BoardsService {
     boards = [];
     getAllBoards() {
         return this.boards;
+    }
+    createBoard(title, description) {
+        const board = {
+            id: (0, uuid_1.v1)(),
+            title,
+            description,
+            status: boards_model_1.BoardStatus.PUBLIC
+        };
+        this.boards.push(board);
     }
 };
 exports.BoardsService = BoardsService;
