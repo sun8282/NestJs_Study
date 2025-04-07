@@ -1,6 +1,7 @@
+import { Board } from './boards.model';
 import { BoardsService } from './boards.service';
 export declare class BoardsController {
     private boardsService;
     constructor(boardsService: BoardsService);
-    getAllBoard(): never[];
+    getAllBoard(): Board[];
 }
