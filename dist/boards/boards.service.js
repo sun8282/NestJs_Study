@@ -23,6 +23,7 @@ let BoardsService = class BoardsService {
             status: boards_model_1.BoardStatus.PUBLIC
         };
         this.boards.push(board);
+        return board;
     }
 };
 exports.BoardsService = BoardsService;
